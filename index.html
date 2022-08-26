@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaseWeb3</title>
+</head>
+<body>
+    <h1>Login com a metamask</h1>
+    <button onclick="loginMetamask()">Login Metamask</button>
+    <h2>Carteira: <span id="carteira"></span></h2>
+
+
+    <h1>Consulte seu saldo BNB</h1>
+    <button onclick="getBnbBalance()">Consulte seu saldo em BnB</button>
+    <h2>Saldo BNB: <span id="saldobnb"></span></h2>
+
+    <h1>Transferencia de BNB</h1>
+    <h2>Quanto: <input type="text" id="amount"></h1>
+    <h2>Para quem: <input type="text" id="toAddress"></h2>
+    <button onclick="transferBNB()">Transferir</button>
+
+    <h1>Consulte o seu saldo de tokens</h1>
+    <h2>Contrato: <input type="text" id="contrato"></h2>
+    <button onclick="getTokenBalance()">Consulte saldo Tokens</button>
+    <h2>Saldo <span id="nomeToken">Tokens</span>: <span id="saldoTokens"></span></h2>
+
+    <h1>Transferencia de tokens</h1>
+    <h2>Contrato: <input type="text" id="contratoTransf"></h2>
+    <h2>Quanto: <input type="text" id="amountTokens"></h2>
+    <h2>Para quem: <input type="text" id="toTokens"></h2>
+    <button onclick="transferToken()">Transferir</button>
+
+    <br><br><br><br><br>
+    <script src="metamaskService.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+            type="application/javascript"></script>
+</body>
+</html>
